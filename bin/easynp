@@ -1,0 +1,17 @@
+#! /usr/bin/env node
+
+const yargs = require("yargs/yargs");
+
+const { hideBin } = require("yargs/helpers");
+const argv = yargs(hideBin(process.argv)).argv;
+
+let _cmd = argv._[0];
+console.log(_cmd);
+
+const commands = ["new"];
+
+if (!commands.includes(_cmd)) {
+    _cmd = "help";
+}
+
+require(`./easynp-${_cmd}.js`);
