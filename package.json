@@ -1,5 +1,5 @@
 {
-    "name": "easynp",
+    "name": "@mrbaoquan/easynp",
     "version": "0.0.1",
     "description": "rollup package cli",
     "scripts": {

@@ -6,7 +6,6 @@ const { hideBin } = require("yargs/helpers");
 const argv = yargs(hideBin(process.argv)).argv;
 
 let _cmd = argv._[0];
-console.log(_cmd);
 
 const commands = ["new"];
 
